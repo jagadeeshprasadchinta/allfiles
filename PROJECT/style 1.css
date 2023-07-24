@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.search-bar {
+  display: flex;
+}
+
+input[type="text"], button {
+  padding: 15px;
+  padding-inline-start: 15px;
+  height: fit-content;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  #datepicker:15px;
+
+}
+input [type=" text"]
+datepicker {
+  padding: 15px;
+  color: blue;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form label, .search-form input, .search-form button {
+  margin-right: 10px;
+}
+
+.search-form input[type="date"] {
+  width: 150px; /* Adjust the width as needed */
+}

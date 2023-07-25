@@ -1,0 +1,104 @@
+<html>
+        <title>Makepayment</title>
+        <head>
+            <style>
+               
+                body{
+                   text-align: right;
+                 height: 600px;
+        width: 30%;
+        margin-top: 8ch;
+        margin-left: 58ch;
+        background-color:lightgrey;
+        padding-top: 20px;
+        font-size: medium;
+        color:black;
+        background-repeat: no-repeat;
+        background-size: 1400px 800px;
+        background-repeat: repeat-y;
+        background-image: url('istockphoto-1244034031-612x612.jpg'); 
+
+     
+ }
+ 
+                        .card-details {
+                            background: rgb(172, 224, 52);
+                            color: black(225, 223, 233);
+                            margin: 10px 30px;
+                            line-height: 35px;
+                        padding-bottom: 1px;
+                        
+                        }
+                           
+
+
+
+                        .copyright{
+                           text-align: center;
+                           color: black;
+                           font-size: medium;
+                           font-style: normal;
+            }
+            </style>
+            <script>
+        function validate(form) {
+            var cardnum=form.cardnumber.value;
+            var expdate=form.expirydate.value;
+            var cvvnum=form.CVVnumber.value;
+            var holdername=form.cardholdername.value;
+
+        
+
+             if(cardnum.length===0){
+                 alert("You muste enter  a valid cardnumber");
+                 return false;
+             }
+             if(expdate.length===0){
+                 alert("You muste enter correct expdate");
+                 return false;
+             }
+             if(cvvnum.length===0){
+                 alert("You muste correct CVVnumber ");
+                 return false;
+             }
+             if(holdername.length===0){
+                 alert("You muste enter holdername");
+                 return false;
+             }
+                alert("Congratulations........Payment successfull................Thanks for visit our site");
+                return true;
+        }
+     </script>
+        </head>
+      
+         <body>
+           <div class="container"> 
+                <div class="main-content"> 
+                  <h1 class="text">PAYMENT CONFIRMATION </h1> 
+
+    
+                </div> 
+                <div class="last-content"> 
+
+                    <button type="button" class="pay-now-btn">Apply Coupons</button> 
+                </br>
+              </br>
+                    <button type="button" class="pay-now-btn">Pay with Netbanking</button>
+            </br>
+            <div class="card-details"> 
+
+                <p>Pay using Credit or Debit card</p>
+
+        <form method="post" onsubmit="return validate(this);">
+        CardHolderName : <input type="text" name="cardholdername" placeholder="Enter Name:ram"> <br>
+        CardNumber : <input type="text" name="cardnumber" placeholder="####-####-####"><br>
+        ExpiryDate : <input type="text" name="expirydate" placeholder="DD-MM-YYYY"> <br>
+        CVVNumber : <input type="text" name="CVVnumber" placeholder="###" > <br>
+        </br>
+          <input type="submit" value="Submit">
+    <br>
+    </form>
+    <div class="copyright">Copyright 2023 ©️-Sai Kiran M @mentor-RamKumar</div>
+            </body>
+
+</html>
